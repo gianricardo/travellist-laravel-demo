@@ -9,6 +9,9 @@ Once you have Docker and Docker Compose installed, you can get this environment 
 ```
 docker-compose build app
 docker-compose up -d
+
+docker-compose exec app composer install
+docker-compose exec app php artisan key:generate
 ```
 
 ## Tutorials in this Series:
